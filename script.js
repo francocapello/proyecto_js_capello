@@ -1,31 +1,14 @@
-const user_comprador = "cliente";
-const user_pass = "1234";
+//ingreso al sitio
+let nombre = "";
+let pass = "";
 
-let usuario = prompt("ingrese su usuario");
-let password = prompt("ingrese su contraseña");
+do{
+    nombre = prompt("ingresa tu nombre");
+    pass = prompt("ingrese contraseña");
+}while (!nombre || !pass);
 
-if (user_comprador === usuario && user_pass === password){
 
-    console.log("el usuario ingresado es cliente");
-
-    alert("ya puedes ver la coleccion");
-
-}else{
-
-    let mensaje = "ingrese correctamente sus datos";
-    
-    if(user_comprador != usuario){
-
-        mensaje += "\nUsuario";
-    }
-
-    if (user_pass != password){
-
-        mensaje += "\nContraseña";
-    }
-
-    alert(mensaje);
-}
+alert("Felicitaciones ingresaste " + nombre);
 
 
 
