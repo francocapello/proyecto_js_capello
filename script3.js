@@ -52,20 +52,28 @@ const productos = [{
 //     productosString += 'id: ' + productos[i].id + ' - ' + productos[i].nombre + ': ' + productos[i].cantidad + ' unidades.\n';
 // }
 
-const contenedorLibros = document.getElementById("libros");
-let galeria =``;
+// const contenedorLibros = document.getElementById("libros");
 
-for (const producto of productos) {
-    galeria += `
-    <div class="card" style="width: 18rem;">
-        <img src="${producto.imagen}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${producto.nombre}</h5>
-            <p class="card-text">Precio: $${producto.precio}</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-    </div>
-    `
-}
+// let galeria ="";
 
-contenedorLibros.innerHTML = galeria;
+// for (const producto of productos) {
+//     galeria += `
+//     <div class="card" style="width: 18rem;">
+//         <img src="${producto.imagen}" class="card-img-top" alt="...">
+//         <div class="card-body">
+//             <h5 class="card-title">${producto.nombre}</h5>
+//             <p class="card-text">Precio: $${producto.precio}</p>
+//             <a href="#" class="btn btn-primary">Comprar</a>
+//         </div>
+//     </div>
+//     `
+// }
+
+// contenedorLibros.innerHTML = galeria;
+
+
+const filtro = productos.filter((el) => el.precio <= 1600);
+
+console.log(filtro);
+
+

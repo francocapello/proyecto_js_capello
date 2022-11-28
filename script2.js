@@ -1,11 +1,10 @@
-
-
 //filtro de precios
 
-const precioBarato = 1600;
+// const filtro = productos.filter((el) => el.precio <= 1600);
 
-const barato = arrayProductos.filter((el) => el.precio < precioBarato);
-console.log(barato);
+// console.log(filtro);
+
+
 
 
 
