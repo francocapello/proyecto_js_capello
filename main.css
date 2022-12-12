@@ -37,6 +37,11 @@ main {
     flex-wrap: wrap;
 }
 
+button{
+    display: flex;
+    justify-content: center;
+}
+
 /* footer */
 .pie-pagina{
     width: 100%;
@@ -160,6 +165,8 @@ main {
 .fijar{
     margin-top: -135px;
 }
+
+
 
 
 
