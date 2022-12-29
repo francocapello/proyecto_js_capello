@@ -37,7 +37,7 @@ main {
     flex-wrap: wrap;
 }
 
-button{
+.btn-carrito{
     display: flex;
     justify-content: center;
 }
@@ -166,7 +166,12 @@ button{
     margin-top: -135px;
 }
 
+/* contactos */
 
+table thead{
+    background-color: #302b63;
+    color: white;
+}
 
 
 

@@ -73,13 +73,6 @@ const productos = [{
 ]; 
 
 
-// let seleccion = prompt("Buenas, desea comprar algun producto? si o no")
-
-// while(seleccion !== "si" && seleccion !== "no"){
-//     alert("porfavor ingrese si o no")
-//     seleccion = prompt("Buenas, desea comprar algun producto? si o no")
-// }
-
 let carrito = [];
 
 class Carrito {
@@ -96,6 +89,8 @@ class Carrito {
 const contenedorProductos = document.getElementById("contenedor");
 const inputSearch = document.getElementById("input-search");
 const carritoContenedor = document.getElementById("carrito-contenedor");
+const btnPagar = document.getElementById('btn-pagar');
+
 
 const agregarCarrito = (id) =>{
     if (!id){
@@ -146,7 +141,7 @@ const TodosLosProductos = (productos, contenedor) => {
             <img src="${element.imagen}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${element.nombre}</h5>
-                <p class="card-text">${element.precio}</p>
+                <p class="card-text"> $ ${element.precio}</p>
                 <a href="#" onclick = "agregarCarrito(${element.id})" class="btn btn-primary">Agregar</a>
             </div>
         </div>

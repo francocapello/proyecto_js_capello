@@ -14,7 +14,6 @@ for(let i = 0; i < inputFormulario.length; i++){
 
 
 
-//aca iria el filter q esta en el script3 pero no se porque me agarra error cuando esta aca
 
 
 
